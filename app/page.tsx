@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 const HomePage: React.FC = () => {
   return (
-    <div>
+    <div className='relative'>
       <Navbar />
       <Hero/>
       <AboutUs />
