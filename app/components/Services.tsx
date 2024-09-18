@@ -75,7 +75,7 @@ const Services: React.FC = () => {
                             <div className="bg-white shadow rounded-lg p-6 text-center h-full">
                                 <div className="mb-4">
                                     {/* Using Next.js Image optimization */}
-                                    <Image
+                                    {/* <Image
                                         src={service.image}
                                         alt={service.name}
                                         width={600}
@@ -83,7 +83,7 @@ const Services: React.FC = () => {
                                         className="w-full h-40 object-cover rounded"
                                         placeholder="blur"
                                         blurDataURL="/images/placeholder.jpg"  // Optional: A local low-res placeholder image
-                                    />
+                                    /> */}
                                 </div>
                                 <h3 className="text-2xl font-semibold mb-2 text-secondary">{service.name}</h3>
                                 <p className="text-gray-600">
