@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const services = [
     {
@@ -71,7 +71,7 @@ const Services: React.FC = () => {
                 <h2 className="text-4xl font-bold text-center mb-12 text-primary">Our Services</h2>
                 <div className="flex flex-wrap -mx-4">
                     {services.map((service, index) => (
-                        <div key={index} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                        <div key={index} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 hover:transform-scale-1.5">
                             <div className="bg-white shadow rounded-lg p-6 text-center h-full">
                                 <div className="mb-4">
                                     {/* Using Next.js Image optimization */}
