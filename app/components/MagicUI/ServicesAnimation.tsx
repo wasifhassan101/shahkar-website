@@ -47,33 +47,38 @@ export function AnimatedBeamMultipleOutputDemo({
             )}
             ref={containerRef}
         >
-            <div className="flex size-full flex-row items-stretch justify-between gap-10 max-w-lg">
-                <div className="flex flex-col justify-center gap-2">
-                    <Circle ref={div1Ref} className="size-24">
-                        <p className="font-medium tracking-tighter text-center">Surveillance</p>
-                    </Circle>
-                    <Circle ref={div2Ref} className="size-24">
-                        <p className="font-medium tracking-tighter text-center">Escort Duty</p>
-                    </Circle>
-                    <Circle ref={div3Ref} className="size-24">
-                        <p className="font-medium tracking-tighter text-center">Access Control</p>
-                    </Circle>
-                    <Circle ref={div4Ref} className="size-24">
-                        <p className="font-medium tracking-tighter text-center">VIP Protection</p>
-                    </Circle>
-                    <Circle ref={div5Ref} className="size-24">
-                        <p className="font-medium tracking-tighter text-center">Sniper Posts</p>
-                    </Circle>
-                </div>
+            <div className="flex size-full flex-row items-stretch justify-between gap-10 w-lg md:w-1/2 p-10">
                 <div className="flex flex-col justify-center items-center">
-                    <Circle ref={div6Ref} className="size-32">
-                        {/* <Icons.openai /> */}
+                    <Circle ref={div1Ref} className="size-32">
                         <p className="font-medium flex-wrap tracking-tighter text-center">Shahkar Security Services</p>
                     </Circle>
                 </div>
+                <div className="flex flex-col justify-center gap-2">
+                    <Circle ref={div2Ref} className="size-24">
+                        <p className="font-medium tracking-tighter text-center">Surveillance</p>
+                    </Circle>
+                    <Circle ref={div3Ref} className="size-24">
+                        <p className="font-medium tracking-tighter text-center">Escort Duty</p>
+                    </Circle>
+                    <Circle ref={div4Ref} className="size-24">
+                        <p className="font-medium tracking-tighter text-center">Access Control</p>
+                    </Circle>
+                    <Circle ref={div5Ref} className="size-24">
+                        <p className="font-medium tracking-tighter text-center">VIP Protection</p>
+                    </Circle>
+                    <Circle ref={div6Ref} className="size-24">
+                        <p className="font-medium tracking-tighter text-center">Sniper Posts</p>
+                    </Circle>
+                </div>
+                {/* <div className="flex flex-col justify-center items-center">
+                    <Circle ref={div6Ref} className="size-32">
+                        <p className="font-medium flex-wrap tracking-tighter text-center">Shahkar Security Services</p>
+                    </Circle>
+                </div> */}
                 <div className="flex flex-col justify-center">
                     <Circle ref={div7Ref} className="size-24">
-                        <Icons.user />
+                        {/* <Icons.user /> */}
+                        <p className="font-medium tracking-tighter text-center">Client</p>   
                     </Circle>
                 </div>
             </div>
@@ -81,27 +86,51 @@ export function AnimatedBeamMultipleOutputDemo({
             <AnimatedBeam
                 containerRef={containerRef}
                 fromRef={div1Ref}
+                toRef={div2Ref}
+                curvature={200}
+            />
+            <AnimatedBeam
+                containerRef={containerRef}
+                fromRef={div1Ref}
+                toRef={div3Ref}
+                curvature={100}
+            />
+            <AnimatedBeam
+                containerRef={containerRef}
+                fromRef={div1Ref}
+                toRef={div4Ref}
+            />
+            <AnimatedBeam
+                containerRef={containerRef}
+                fromRef={div1Ref}
+                toRef={div5Ref}
+                curvature={-100}
+            />
+            <AnimatedBeam
+                containerRef={containerRef}
+                fromRef={div1Ref}
                 toRef={div6Ref}
+                curvature={-200}
             />
             <AnimatedBeam
                 containerRef={containerRef}
                 fromRef={div2Ref}
-                toRef={div6Ref}
+                toRef={div7Ref}
             />
             <AnimatedBeam
                 containerRef={containerRef}
                 fromRef={div3Ref}
-                toRef={div6Ref}
+                toRef={div7Ref}
             />
             <AnimatedBeam
                 containerRef={containerRef}
                 fromRef={div4Ref}
-                toRef={div6Ref}
+                toRef={div7Ref}
             />
             <AnimatedBeam
                 containerRef={containerRef}
                 fromRef={div5Ref}
-                toRef={div6Ref}
+                toRef={div7Ref}
             />
             <AnimatedBeam
                 containerRef={containerRef}

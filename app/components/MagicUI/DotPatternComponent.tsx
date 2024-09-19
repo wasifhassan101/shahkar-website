@@ -12,15 +12,15 @@ const DotPatternDemo2 = () => {
                     className="text-4xl font-bold tracking-[-0.02em] text-black dark:text-white md:text-7xl md:leading-[5rem]"
                     words="Better Security for Your Protection"
                 /> */}
-                <p className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white">
-                    Better Security for Your Protection
+                <p className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-blue dark:text-white">
+                    Integrated Security for Your Protection
                 </p>
-                <p className="z-10 whitespace-pre-wrap text-center text-2xl font-medium tracking-tighter text-black dark:text-white">
+                <p className="z-10 whitespace-pre-wrap text-center text-2xl font-medium tracking-tighter text-blue dark:text-white">
                     Ensuring a safe and secure environment is a top priority in the vision of Shahkar Security Services.
                 </p>
                 <a
                     href="#contact"
-                    className="bg-black font-medium tracking-tight rounded-xl text-white py-3 px-8">
+                    className="bg-blue font-medium tracking-tight rounded-xl text-white py-3 px-8">
                     Get Started
                 </a>
             </div>

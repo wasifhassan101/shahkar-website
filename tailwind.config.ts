@@ -19,6 +19,9 @@ const config = {
     },
     extend: {
       colors: {
+        "blue": '#135f96',
+        "red": "#b10f17",
+        "yellow": "#f5e900",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -59,6 +62,14 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -93,6 +104,8 @@ const config = {
         orbit: "orbit calc(var(--duration)*1s) linear infinite",
         "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
         grid: "grid 15s linear infinite",
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
       },
     },
   },
