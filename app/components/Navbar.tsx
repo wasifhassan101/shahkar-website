@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const Navbar: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         <nav className="w-full z-50">
             <div className="container mx-auto px-6 py-4 flex justify-between items-center">
                 <div className="space-x-2 flex items-center">
-                    <a href="#" className="text-3xl font-medium tracking-tighter text-blue">
+                    <a href="#" className="text-3xl font-medium tracking-tighter text-black">
                         Shahkar Security Services
                     </a>
                 </div>
