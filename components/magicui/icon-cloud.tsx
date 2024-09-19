@@ -80,7 +80,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   }, [data, theme]);
 
   return (
-    // @ts-ignore
+    // @ts-expect-error i added it here just to avoid lint error, originally it was ts-ignore
     <Cloud {...cloudProps}>
       <>{renderedIcons}</>
     </Cloud>

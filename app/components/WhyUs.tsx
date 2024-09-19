@@ -1,8 +1,5 @@
 import React from 'react';
 import BlurFade from "@/components/magicui/blur-fade";
-import WordPullUp from '@/components/magicui/word-pull-up';
-import DotPattern from '@/components/magicui/dot-pattern';
-import { cn } from '@/lib/utils';
 
 const reasons = [
     {
@@ -80,7 +77,6 @@ export default WhyShahkarSecurityGuards;
 
 
 import { BorderBeam } from "@/components/magicui/border-beam";
-import Particles from '@/components/magicui/particles';
 import RetroGrid from '@/components/magicui/retro-grid';
 
 export function BorderBeamDemo() {

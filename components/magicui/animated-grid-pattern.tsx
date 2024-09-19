@@ -10,7 +10,7 @@ interface GridPatternProps {
   height?: number;
   x?: number;
   y?: number;
-  strokeDasharray?: any;
+  strokeDasharray?: string | number | undefined;
   numSquares?: number;
   className?: string;
   maxOpacity?: number;
@@ -28,7 +28,7 @@ export function GridPattern({
   className,
   maxOpacity = 0.5,
   duration = 4,
-  repeatDelay = 0.5,
+  // repeatDelay = 0.5,
   ...props
 }: GridPatternProps) {
   const id = useId();

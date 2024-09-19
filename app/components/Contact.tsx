@@ -2,8 +2,6 @@ import FlickeringGrid from '@/components/magicui/flickering-grid';
 import React from 'react';
 import { CheckIcon, ChevronRightIcon } from "lucide-react";
 import { AnimatedSubscribeButton } from '@/components/magicui/animated-subscribe-button';
-import { cn } from '@/lib/utils';
-import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 
 const Contact: React.FC = () => {
     return (

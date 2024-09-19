@@ -4,7 +4,6 @@ import React, { forwardRef, useRef } from "react";
 
 import { cn } from "@/lib/utils";
 import { AnimatedBeam } from "@/components/magicui/animated-beam";
-import RetroGrid from "@/components/magicui/retro-grid";
 import Particles from "@/components/magicui/particles";
 
 const Circle = forwardRef<
