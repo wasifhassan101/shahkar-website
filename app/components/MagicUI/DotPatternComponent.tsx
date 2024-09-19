@@ -20,7 +20,7 @@ const DotPatternDemo2 = () => {
                 </p>
                 <a
                     href="#contact"
-                    className="bg-black rounded-xl text-white py-2 px-4">
+                    className="bg-black font-medium tracking-tight rounded-xl text-white py-3 px-8">
                     Get Started
                 </a>
             </div>

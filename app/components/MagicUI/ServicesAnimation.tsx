@@ -4,6 +4,8 @@ import React, { forwardRef, useRef } from "react";
 
 import { cn } from "@/lib/utils";
 import { AnimatedBeam } from "@/components/magicui/animated-beam";
+import RetroGrid from "@/components/magicui/retro-grid";
+import Particles from "@/components/magicui/particles";
 
 const Circle = forwardRef<
     HTMLDivElement,
@@ -41,7 +43,7 @@ export function AnimatedBeamMultipleOutputDemo({
     return (
         <div
             className={cn(
-                "relative flex flex-col h-[90%] w-full items-center justify-center overflow-hidden rounded-lg bg-background",
+                "relative flex flex-col w-full items-center justify-center overflow-hidden rounded-lg bg-background",
                 className,
             )}
             ref={containerRef}
@@ -106,6 +108,13 @@ export function AnimatedBeamMultipleOutputDemo({
                 containerRef={containerRef}
                 fromRef={div6Ref}
                 toRef={div7Ref}
+            />
+            <Particles
+                className="absolute inset-0"
+                quantity={100}
+                ease={80}
+                color={"#000"}
+                refresh
             />
         </div>
     );

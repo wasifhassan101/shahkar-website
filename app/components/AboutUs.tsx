@@ -6,7 +6,7 @@ import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 
 const AboutUs: React.FC = () => {
     return (
-        <section id="about" className="h-screen">
+        <section id="about-us" className="h-screen">
             <div className="relative flex flex-col lg:flex-row w-full h-full items-center justify-center overflow-hidden rounded-lg bg-background p-6 lg:p-20">
                 <div className="flex flex-col lg:flex-row items-center lg:shadow-xl lg:p-10 lg:rounded-xl bg-white z-10 space-y-6 lg:space-y-0 lg:space-x-6">
                     <Image src={ceoImage} alt='CEO Shehroz Ahmed' className='rounded-xl w-48 h-48 lg:w-64 lg:h-64' />
