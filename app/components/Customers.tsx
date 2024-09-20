@@ -130,7 +130,7 @@ const ReviewCard = ({
                     <figcaption className="text-sm font-medium dark:text-white">
                         {name}
                     </figcaption>
-                    <p className="text-xs font-medium dark:text-white/40">{username}</p>
+                    <p className="text-xs font-medium dark:text-white/40 bg-gradient-to-b from-blue to-red bg-clip-text text-transparent">{username}</p>
                 </div>
             </div>
             <blockquote className="mt-2 text-sm">{body}</blockquote>
@@ -141,7 +141,7 @@ const ReviewCard = ({
 const Customers = () => {
     return (
         <div className="relative flex w-full flex-col items-center justify-center overflow-hidden bg-background py-20 space-y-10">
-            <h2 className="text-4xl font-medium tracking-tight">What Our Customers Say About Us?</h2>
+            <h2 className="text-4xl font-medium tracking-tight text-blue text-center">What Our Customers Say About Us?</h2>
             <div>
                 <Marquee pauseOnHover className="[--duration60s]">
                     {firstRow.map((review) => (

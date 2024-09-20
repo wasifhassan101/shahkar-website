@@ -8,11 +8,11 @@ const AboutUs: React.FC = () => {
     return (
         <section id="about-us" className="h-screen">
             <div className="relative flex flex-col lg:flex-row w-full h-full items-center justify-center overflow-hidden rounded-lg bg-background p-6 lg:p-20">
-                <div className="flex flex-col lg:flex-row items-center lg:shadow-xl lg:p-10 lg:rounded-xl bg-white z-10 space-y-6 lg:space-y-0 lg:space-x-6">
+                <div className="flex flex-col lg:flex-row items-center shadow-xl lg:p-10 rounded-xl bg-white z-10 space-y-6 lg:space-y-0 lg:space-x-6">
                     <Image src={ceoImage} alt='CEO Shehroz Ahmed' className='rounded-xl w-48 h-48 lg:w-64 lg:h-64' />
                     <div className="container mx-auto lg:px-6">
-                        <h2 className="text-2xl lg:text-4xl font-medium text-center lg:text-left mb-6 tracking-tighter text-primary">
-                            Message from CEO
+                        <h2 className="text-2xl lg:text-4xl font-medium text-center text-blue lg:text-left mb-6 tracking-tighter">
+                            Message from Leadership
                         </h2>
                         <div className="max-w-xl lg:max-w-4xl mx-auto text-gray-700 leading-relaxed">
                             <p className="mb-4 text-sm lg:text-base">
@@ -24,7 +24,7 @@ const AboutUs: React.FC = () => {
                             <p className="mb-4 text-sm lg:text-base">
                                 Quality service and a team of motivated employees are areas where we give more emphasis. All members of Shahkar Security Services are responsible and accountable towards their clients and are bound to maintain high standards of service delivery while continuing to grow as a market brand.
                             </p>
-                            <p className="font-bold text-right text-sm lg:text-base">Shehroz Ahmed<br />CEO</p>
+                            <p className="font-bold text-right text-blue text-sm lg:text-base">Shehroz Ahmed<br /><span className='text-red'>CEO</span></p>
                         </div>
                     </div>
                 </div>

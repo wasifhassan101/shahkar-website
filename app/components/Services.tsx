@@ -69,7 +69,7 @@ const Services: React.FC = () => {
     return (
         <section id="services" className="h-screen overflow-hidden pt-10">
             {/* <div className='h-[10%] flex items-center justify-center'> */}
-            <h2 className="text-4xl font-medium tracking-tighter text-center text-primary">Our Services</h2>
+            <h2 className="text-4xl font-medium tracking-tighter text-center text-blue">Our Services</h2>
             {/* </div> */}
             <AnimatedBeamMultipleOutputDemo />
         </section>

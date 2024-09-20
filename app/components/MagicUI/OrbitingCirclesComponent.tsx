@@ -29,7 +29,7 @@ export function OrbitingCirclesComponent() {
 
     return (
         <div className="relative hidden md:flex h-[500px] w-1/2 flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
-            <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-yellow to-gray-300 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
+            <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-blue to-red bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
                 {currentWord}
             </span>
 
@@ -40,7 +40,7 @@ export function OrbitingCirclesComponent() {
                 delay={20}
                 radius={80}
             >
-                <CameraAltIcon style={{ fontSize: 30 }} />
+                <CameraAltIcon style={{ fontSize: 30, color:"#b10f17" }} />
             </OrbitingCircles>
             <OrbitingCircles
                 className="size-[30px] border-none bg-transparent"
@@ -48,7 +48,7 @@ export function OrbitingCirclesComponent() {
                 delay={10}
                 radius={80}
             >
-                <VerifiedUserIcon style={{ fontSize: 30 }} />
+                <VerifiedUserIcon style={{ fontSize: 30, color:"#135f96" }} />
             </OrbitingCircles>
 
             {/* Outer Circles (reverse) */}
@@ -58,7 +58,7 @@ export function OrbitingCirclesComponent() {
                 duration={20}
                 reverse
             >
-                <SecurityIcon style={{ fontSize: 50 }} />
+                <SecurityIcon style={{ fontSize: 50, color: "#b10f17" }} />
             </OrbitingCircles>
             <OrbitingCircles
                 className="size-[50px] border-none bg-transparent"
@@ -67,7 +67,7 @@ export function OrbitingCirclesComponent() {
                 delay={20}
                 reverse
             >
-                <LockIcon style={{ fontSize: 50 }} />
+                <LockIcon style={{ fontSize: 50, color: "#135f96" }} />
             </OrbitingCircles>
         </div>
     );

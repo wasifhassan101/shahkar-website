@@ -43,18 +43,18 @@ const WhyShahkarSecurityGuards: React.FC = () => {
     return (
         <section id="why-us" className="pt-10 relative overflow-hidden">
             <div className="container mx-auto px-6">
-                <h2 className="text-4xl font-medium text-center mb-12 tracking-tight">
+                <h2 className="text-4xl font-medium text-center mb-12 tracking-tight text-blue">
                     Why Shahkar Security Services?
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {reasons.map((reason, index) => (
-                        <BlurFade key={index} delay={0.25 + index * 0.1} className='bg-white z-10' inView>
-                            <div className="border h-full shadow-lg p-6 rounded-2xl hover:shadow-xl transition-all duration-300 hover:scale-110 cursor-pointer">
+                        <BlurFade key={index} delay={0.25 + index * 0.1} className='bg-white z-10 rounded-2xl' inView>
+                            <div className="border h-full shadow-lg p-6 rounded-2xl hover:shadow-xl transition-all duration-300 bg-white hover:scale-110 cursor-pointer">
                                 <div className="flex flex-col mb-4">
-                                    <div className="text-2xl font-semibold tracking-[-0.02em] text-black dark:text-white">
+                                    <div className="text-2xl font-semibold tracking-[-0.02em] text-blue dark:text-white">
                                         0{index + 1}
                                     </div>
-                                    <h3 className="text-2xl font-semibold tracking-[-0.02em] text-black dark:text-white">
+                                    <h3 className="text-2xl font-semibold tracking-[-0.02em] bg-gradient-to-b from-blue to-red bg-clip-text text-transparent dark:text-white">
                                         {reason.title}
                                     </h3>
                                 </div>

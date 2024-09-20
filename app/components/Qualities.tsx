@@ -62,17 +62,21 @@ const Qualities: React.FC = () => {
     return (
         <section id="qualities" className="h-[100dvh] overflow-hidden relative pt-10">
             <div className='h-[10%] flex items-center justify-center'>
-                <h2 className="text-4xl font-medium tracking-tight">Qualities of Shahkar Security Guards</h2>
+                <h2 className="text-4xl font-medium tracking-tight text-blue text-center">Qualities of Shahkar Security Guards</h2>
             </div>
-            <div className='flex justify-around pt-10'>
-                <AnimatedList delay={1500}>
-                    {qualities.map((item, idx) => (
-                        <Notification {...item} key={idx} />
-                    ))}
-                </AnimatedList>
-                <BlurFade key={0} delay={0.5} inView className='relative'>
-                    <Image alt="Shahkar Security Guard" src={guardImg} width={400} height={500} />
-                </BlurFade>
+            <div className='flex md:justify-around pt-10'>
+                <div className='w-2/3 md:w-1/2 flex justify-center'>
+                    <AnimatedList delay={1500}>
+                        {qualities.map((item, idx) => (
+                            <Notification {...item} key={idx} />
+                        ))}
+                    </AnimatedList>
+                </div>
+                <div className='w-1/2 flex justify-center absolute -bottom-32 md:bottom-0 -right-10 md:right-0 md:relative'>
+                    <BlurFade key={0} delay={0.5} inView className='relative'>
+                        <Image alt="Shahkar Security Guard" src={guardImg} width={400} height={500} />
+                    </BlurFade>
+                </div>
             </div>
         </section>
     );
@@ -94,7 +98,7 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
     return (
         <figure
             className={cn(
-                "relative mx-auto min-h-fit w-full max-w-[400px] cursor-pointer overflow-hidden rounded-2xl p-4",
+                "relative mx-auto min-h-fit w-full max-w-[300px] md:max-w-[400px] cursor-pointer overflow-hidden rounded-2xl p-4",
                 // animation styles
                 "transition-all duration-200 ease-in-out hover:scale-[103%]",
                 // light styles
@@ -114,9 +118,9 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
                 </div>
                 <div className="flex flex-col overflow-hidden">
                     <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white ">
-                        <span className="text-sm sm:text-lg">{name}</span>
+                        <span className="text-sm sm:text-lg text-red">{name}</span>
                         <span className="mx-1">·</span>
-                        <span className="text-xs text-gray-500">{time}</span>
+                        <span className="text-xs bg-gradient-to-b from-blue to-red bg-clip-text text-transparent">{time}</span>
                     </figcaption>
                     <p className="text-sm font-normal dark:text-white/60">
                         {description}
